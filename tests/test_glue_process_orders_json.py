@@ -163,9 +163,6 @@ def test_process_data_partitioning(glueContext: GlueContext):
     spark = glueContext.spark_session
 
     with initialize_environment(spark) as (process, s3):
-        # Test code goes here
-        # ...
-        # process, s3 = initialize_test(spark)
 
         from src.glue_process_orders_json import process_data
 
@@ -187,9 +184,6 @@ def test_process_data_record_count(glueContext: GlueContext):
     spark = glueContext.spark_session
 
     with initialize_environment(spark) as (process, s3):
-        # Test code goes here
-        # ...
-        # process, s3 = initialize_test(spark)
 
         from src.glue_process_orders_json import process_data
 
